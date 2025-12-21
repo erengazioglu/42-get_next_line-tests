@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.c                                            :+:      :+:    :+:   */
+/*   tests.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/21 21:03:07 by egaziogl          #+#    #+#             */
-/*   Updated: 2025/12/21 21:05:08 by egaziogl         ###   ########.fr       */
+/*   Created: 2025/12/21 21:03:27 by egaziogl          #+#    #+#             */
+/*   Updated: 2025/12/21 21:04:46 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
-
-int main(void)
-{
-	printf("buffer size: %d\n", BUFFER_SIZE);
-}
+#ifndef TESTS_H
+# define TESTS_H
+# include <stdio.h>
+# include "../get_next_line/get_next_line.h"
+#endif
