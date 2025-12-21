@@ -4,6 +4,6 @@ FILES		= \
 			$(DIR)/get_next_line.c
 INCLUDE		= $(DIR)/get_next_line.h
 
-test: $(FILES)
+test: $(FILES) tests.c
 	cc $^ && ./a.out
 	cc -D BUFFER_SIZE=42 $^ && ./a.out
