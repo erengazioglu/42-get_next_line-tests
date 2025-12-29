@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/21 21:03:07 by egaziogl          #+#    #+#             */
-/*   Updated: 2025/12/24 09:39:36 by egaziogl         ###   ########.fr       */
+/*   Updated: 2025/12/29 13:57:45 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ int main(void)
 {
 	// if (!test_buffersize())
 		// if (!test_read())
-	return (test_strnjoin());
+	return (test_read());
 	// return (1);
 }
