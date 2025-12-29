@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.c                                            :+:      :+:    :+:   */
+/*   suites.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/21 21:03:07 by egaziogl          #+#    #+#             */
-/*   Updated: 2025/12/22 19:24:07 by egaziogl         ###   ########.fr       */
+/*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
+/*   Updated: 2025/12/24 09:40:43 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#include "../include/tests.h"
 
-int	test_strnjoin(void)
+int	suite_strnjoin(void)
 {
 	char *str1 = "hello ";
 	char *str2 = "42 baby!";
@@ -24,15 +24,16 @@ int	test_strnjoin(void)
 	return (0);
 }
 
-int	test_buffersize(void)
+int	suite_buffersize(void)
 {
 	printf("buffer size: %d\n", BUFFER_SIZE);
 	return (0);
 }
 
-int test_read(void)
+int suite_read(void)
 {
 	char	*result;
+
 	int	fd = open("test_file.txt", O_RDONLY);
 	result = get_next_line(fd);
 	if (!result)
@@ -42,10 +43,7 @@ int test_read(void)
 	return (0);
 }
 
-int main(void)
+int	suite_strchr(void)
 {
-	// if (!test_buffersize())
-		// if (!test_read())
-	return (test_strnjoin());
-	// return (1);
+	printf("strchr(%s, %c) = %d", s, c,)
 }
