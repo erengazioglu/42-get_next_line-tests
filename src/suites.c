@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
-/*   Updated: 2025/12/30 18:33:46 by egaziogl         ###   ########.fr       */
+/*   Updated: 2025/12/30 19:23:09 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,6 @@ int	suite_strnjoin(void)
 	return (0);
 }
 
-int suite_read(void)
-{
-	char	*result;
-
-	int	fd = open("test_file.txt", O_RDONLY);
-	test_read(fd);
-	return (0);
-}
 int suite_read_multi(int i)
 {
 	char	*result;
