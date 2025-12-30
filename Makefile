@@ -10,4 +10,4 @@ INCLUDE		= $(DIR)/get_next_line.h
 
 test: $(GNL) $(SRC)
 	@cc $^ && ./a.out
-	@cc -D BUFFER_SIZE=42 $^ && ./a.out
+	@cc -D BUFFER_SIZE=4 $^ && ./a.out
