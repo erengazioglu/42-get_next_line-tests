@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 16:23:12 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 17:13:30 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ int suite_read_multi(int n, char *fn)
 	return (0);
 }
 
-int	suite_strchr(void)
+int	suite_strfind(void)
 {
-	printf("strchr(%s, %c) = %d\n", "hello", 'l', ft_strchr("hello", 'l'));
+	printf("strfind(%s, %c) = %d\n", "hello", 'l', ft_strfind("hello", 'l'));
 	return (0);
 }
 

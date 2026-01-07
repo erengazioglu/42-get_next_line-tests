@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/21 21:03:27 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 16:23:53 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 17:13:30 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	test_read(int fd);
 
 // test suites
 int	suite_strnjoin(void);
-int	suite_strchr(void);
+int	suite_strfind(void);
 int suite_read_multi(int n, char *fn);
 
 #endif
