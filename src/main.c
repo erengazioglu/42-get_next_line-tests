@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 18:28:04 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 21:13:50 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 21:20:16 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ int main(void)
 	// result |= suite_strnjoin();
 	result |= suite_read_multi(40, "testfile_regular.txt");
 	result |= suite_read_multi(30, "testfile_startnl.txt");
-	result |= suite_read_multi(20, "testfile_onlynl.txt");
-	result |= suite_read_multi(20, "testfile_empty.txt");
-	result |= suite_read_multi(20, "testfile_onenl.txt");
+	result |= suite_read_multi(15, "testfile_onlynl.txt");
+	result |= suite_read_multi(5, "testfile_onenl.txt");
+	result |= suite_read_multi(5, "testfile_empty.txt");
 
 	printf("exiting (%d)\n", result);
 	return (result);
