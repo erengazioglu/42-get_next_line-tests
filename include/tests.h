@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/21 21:03:27 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 17:13:30 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 19:02:22 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define TESTS_H
 # include <stdio.h>
 # include <fcntl.h>
+# include <stdbool.h>
 # include "../../get_next_line/get_next_line.h"
 
 // individual tests

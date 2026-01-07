@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 18:28:04 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 17:27:09 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 21:13:50 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ int main(void)
 	printf("---\nTESTING buffer size %d\n", BUFFER_SIZE);
 	result = 0;
 	// result |= suite_strnjoin();
-	result |= suite_read_multi(10, "testfile_regular.txt");
-	result |= suite_read_multi(10, "testfile_startnl.txt");
+	result |= suite_read_multi(40, "testfile_regular.txt");
+	result |= suite_read_multi(30, "testfile_startnl.txt");
+	result |= suite_read_multi(20, "testfile_onlynl.txt");
+	result |= suite_read_multi(20, "testfile_empty.txt");
+	result |= suite_read_multi(20, "testfile_onenl.txt");
 
 	printf("exiting (%d)\n", result);
 	return (result);

@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 17:13:30 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 21:00:16 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,9 @@ int suite_read_multi(int n, char *fn)
 	{
 		result = get_next_line(fd);
 		if (!result)
-			return (1);
-		printf("READ | %s\n", result);
+			printf("READ | (NULL)\n");
+		else
+			printf("READ | %s\n", result);
 	}
 	close(fd);
 	free(result);
