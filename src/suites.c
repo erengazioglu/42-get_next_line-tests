@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/06 23:41:34 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/07 16:23:12 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,15 @@ int	suite_strnjoin(void)
 	return (0);
 }
 
-int suite_read_multi(int i)
+int suite_read_multi(int n, char *fn)
 {
 	char	*result;
-
-	int	fd = open("test_file.txt", O_RDONLY);
+	int		i;
+	int		fd;
+	
+	i = n;
+	fd = open(fn, O_RDONLY);
+	printf("--- Reading %s (%d times) ---\n", fn, n);
 	while (i--)
 	{
 		result = get_next_line(fd);
@@ -37,9 +41,20 @@ int suite_read_multi(int i)
 			return (1);
 		printf("READ | %s\n", result);
 	}
-		// test_read(fd);
 	close(fd);
 	free(result);
+	
+	// i = n;
+	// fd = open("testfile_onlynl.txt", O_RDONLY);
+	// while (i--)
+	// {
+	// 	result = get_next_line(fd);
+	// 	if (!result)
+	// 		return (1);
+	// 	printf("READ | %s\n", result);
+	// }
+	// close(fd);
+	// free(result);
 	return (0);
 }
 
