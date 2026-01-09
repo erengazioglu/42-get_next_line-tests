@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 18:28:04 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 21:20:16 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/09 13:40:25 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,13 @@ int main(void)
 	result |= suite_read_multi(15, "testfile_onlynl.txt");
 	result |= suite_read_multi(5, "testfile_onenl.txt");
 	result |= suite_read_multi(5, "testfile_empty.txt");
+	result |= suite_read_multi(5, "invalid_file.txt");
+	result |= suite_read_multi_fd(5, -1);
+	result |= suite_read_multi_fd(5, 1025);
+	result |= suite_read_multi_fd(5, 100);
+	result |= suite_read_multi_fd(5, 0);
+
+	
 
 	printf("exiting (%d)\n", result);
 	return (result);

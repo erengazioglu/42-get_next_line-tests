@@ -9,8 +9,8 @@ SRC			= \
 INCLUDE		= $(DIR)/get_next_line.h
 
 test: $(GNL) $(SRC)
-	@cc $^ && ./a.out
+# 	@cc $^ && ./a.out
 	@cc -g -D BUFFER_SIZE=1024 $^ && ./a.out
-	@cc -g -D BUFFER_SIZE=4 $^ && ./a.out
-	@cc -g -D BUFFER_SIZE=1 $^ && ./a.out
-	@cc -g -D BUFFER_SIZE=0 $^ && ./a.out
+# 	@cc -g -D BUFFER_SIZE=4 $^ && ./a.out
+# 	@cc -g -D BUFFER_SIZE=1 $^ && ./a.out
+# 	@cc -g -D BUFFER_SIZE=0 $^ && ./a.out

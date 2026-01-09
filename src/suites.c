@@ -6,7 +6,7 @@
 /*   By: egaziogl <egaziogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 09:40:26 by egaziogl          #+#    #+#             */
-/*   Updated: 2026/01/07 21:20:48 by egaziogl         ###   ########.fr       */
+/*   Updated: 2026/01/09 13:39:31 by egaziogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,28 @@ int suite_read_multi(int n, char *fn)
 
 	return (0);
 }
+
+int	suite_read_multi_fd(int n, int fd)
+{
+	char	*result;
+	int		i;
+	
+	i = n;
+	printf("\n--- Reading from fd %d (%d times) ---\n", fd, n);
+	while (i--)
+	{
+		result = get_next_line(fd);
+		if (!result)
+			printf("READ | (NULL)\n");
+		else
+			printf("READ | %s", result);
+	}
+	close(fd);
+	free(result);
+
+	return (0);
+}
+
 
 int	suite_strfind(void)
 {
